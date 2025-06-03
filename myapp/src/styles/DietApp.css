@@ -1,0 +1,70 @@
+/* Dark & Light mode backgrounds */
+body.light {
+  background-color: #f9fafb;
+  color: #222;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #eee;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Calendar logged day highlight */
+.react-calendar__tile.logged-day {
+  background-color: #3b82f6 !important; /* blue */
+  color: white !important;
+  border-radius: 50% !important;
+  font-weight: bold;
+}
+
+/* Calendar dark mode */
+.dark-calendar {
+  background-color: #1e1e1e !important;
+  color: #eee !important;
+}
+
+.dark-calendar .react-calendar__tile {
+  color: #eee !important;
+}
+
+.dark-calendar .react-calendar__tile--now {
+  background: #444 !important;
+  color: #fff !important;
+}
+
+/* Celebration message */
+.celebration {
+  margin-top: 20px;
+  font-size: 1.25rem;
+  padding: 10px;
+  background-color: #22c55e;
+  color: white;
+  border-radius: 6px;
+  text-align: center;
+  animation: celebrate 1s ease infinite alternate;
+}
+
+@keyframes celebrate {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+/* Input styling */
+input[type="number"] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+input[type="number"]::placeholder {
+  color: #aaa;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: #94d3a2;
+  color: #f0f0f0;
+}
